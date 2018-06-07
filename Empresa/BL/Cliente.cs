@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using DAO;
+using TO;
+using System.Data;
 
 namespace BL
 {
@@ -12,11 +15,17 @@ namespace BL
         public String Apellido;
         public String Correo;
         public int Telefono;
+        public DAOHandler dao;
 
-
-        public void main()
+       public void getClients(DataTable tableClients)
         {
+            tableClients.Rows.Clear();
 
+            foreach (TO.ClienteTO item in dao.getClients())
+            {
+                tableClients.Rows.Add(item.Cedula, item.Nombre, item.Apellido
+                    , item.Correo, item.Telefono);
+            }
         }
     }
 }
