@@ -139,19 +139,37 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ClienteInsertar.aspx" />
     <Content Include="Clientes.aspx" />
+    <Content Include="Facturas.aspx" />
     <Content Include="fondo.jpg" />
     <Content Include="Home.aspx" />
+    <Content Include="Productos.aspx" />
+    <Content Include="RegistroFacturas.aspx" />
     <Content Include="scripts\ai.0.15.0-build58334.js" />
     <Content Include="scripts\ai.0.15.0-build58334.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClienteInsertar.aspx.designer.vb">
+      <DependentUpon>ClienteInsertar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClienteInsertar.aspx.vb">
+      <DependentUpon>ClienteInsertar.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Clientes.aspx.designer.vb">
       <DependentUpon>Clientes.aspx</DependentUpon>
     </Compile>
     <Compile Include="Clientes.aspx.vb">
       <DependentUpon>Clientes.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Facturas.aspx.designer.vb">
+      <DependentUpon>Facturas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facturas.aspx.vb">
+      <DependentUpon>Facturas.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Home.aspx.designer.vb">
@@ -179,6 +197,20 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Productos.aspx.designer.vb">
+      <DependentUpon>Productos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Productos.aspx.vb">
+      <DependentUpon>Productos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="RegistroFacturas.aspx.designer.vb">
+      <DependentUpon>RegistroFacturas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroFacturas.aspx.vb">
+      <DependentUpon>RegistroFacturas.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>

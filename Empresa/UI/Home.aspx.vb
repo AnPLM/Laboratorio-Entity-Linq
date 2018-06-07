@@ -6,6 +6,6 @@
     End Sub
 
     Protected Sub btnClientes_Click(sender As Object, e As EventArgs) Handles btnClientes.Click
-
+        Response.Redirect("Clientes.aspx")
     End Sub
 End Class
