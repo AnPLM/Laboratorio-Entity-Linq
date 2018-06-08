@@ -31,5 +31,22 @@ namespace DAO
             }
             return list;
         }
+
+        public void insertarCliente(ClienteTO cliente)
+        {
+            using (context = new EmpresaEntities())
+            {
+                Cliente nuevoCliente = new Cliente
+                {
+                    Cedula = cliente.Cedula,
+                    Nombre = cliente.Nombre,
+                    Apellido = cliente.Apellido,
+                    Correo = cliente.Correo,
+                    Telefono = cliente.Telefono
+                };
+                context.Clientes.Add(nuevoCliente);
+                context.SaveChanges();
+            }
+        }
     }
 }

@@ -27,5 +27,21 @@ namespace BL
                     , item.Correo, item.Telefono);
             }
         }
+
+        public void agregarCliente(String cedula, String nombre, String apellido, 
+            String correo, int telefono)
+        {
+            this.Cedula = cedula;
+            this.Nombre = nombre;
+            this.Apellido = apellido;
+            this.Correo = correo;
+            this.Telefono = telefono;
+
+            ClienteTO toCliente = new ClienteTO(Cedula, Nombre, Apellido, Correo, Telefono);
+
+            dao = new DAOHandler();
+            dao.insertarCliente(toCliente);
+
+        }
     }
 }
