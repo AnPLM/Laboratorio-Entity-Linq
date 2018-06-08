@@ -15,7 +15,7 @@ namespace BL
         public String Apellido;
         public String Correo;
         public int Telefono;
-        public DAOHandler dao;
+        public DAOHandler dao = new DAOHandler();
 
        public void getClients(DataTable tableClients)
         {

@@ -12,11 +12,11 @@ namespace DAO
         private EmpresaEntities context;
 
 
-        public List<TO.ClienteTO> getClients()
-        {
+        public List<TO.ClienteTO> getClients() {
 
-            var query = (from clients in context.Clientes
-                        select clients).ToList();
+            var query = from clients in context.Clientes
+                        select clients;
+
 
             List<ClienteTO> list = new List<ClienteTO>();
             ClienteTO clienteTO = new ClienteTO();

@@ -141,6 +141,7 @@
   <ItemGroup>
     <Content Include="ClienteInsertar.aspx" />
     <Content Include="Clientes.aspx" />
+    <Content Include="ClienteSelect.aspx" />
     <Content Include="Facturas.aspx" />
     <Content Include="fondo.jpg" />
     <Content Include="Home.aspx" />
@@ -163,6 +164,13 @@
     </Compile>
     <Compile Include="Clientes.aspx.vb">
       <DependentUpon>Clientes.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ClienteSelect.aspx.designer.vb">
+      <DependentUpon>ClienteSelect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClienteSelect.aspx.vb">
+      <DependentUpon>ClienteSelect.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Facturas.aspx.designer.vb">
